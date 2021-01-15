@@ -7,8 +7,11 @@ This document give a very efficient way to taking backups of MySQL DB and store 
 ## Technologies
 
 -bash
+
 -MySQL
+
 -Amazon S3
+
 -Amazon CLI
 
 
@@ -20,24 +23,31 @@ This document give a very efficient way to taking backups of MySQL DB and store 
 4. Launch another EC2 instance-EC2b.
     
     *Install MySQL server
+     
      yum install mysql-server -y
 
     *Start the MySQL
+     
      service mysqld start
 
     *Update password on your local MySQL server
+     
      mysqladmin -u root password [your_new_pwd]
 
     *Login to the mysql server.
-      mysql -uroot -p
+     
+     mysql -uroot -p
 
     *CREATE DATABASE db_name
+    
 5. On first EC2 instance-EC2a, 
     
     *get DB_Backup_Script.sh & Restore_Script.sh
     
     *change mod of both the scripts to make them executable
+     
      chmod 755 DB_Backup_Script.sh
+     
      chmod 755 Restore_Script.sh
     
     *execute the scripts
