@@ -18,6 +18,7 @@ This document give a very efficient way to taking backups of MySQL DB and store 
 2. Enable Amazon Simple Email Service (SES) to send alert emails.
 3. Install MySQL Client on EC2 instance to connect to your MySQL instance.
 4. Launch another EC2 instance-EC2b.
+    
     *Install MySQL server
      yum install mysql-server -y
 
@@ -32,6 +33,7 @@ This document give a very efficient way to taking backups of MySQL DB and store 
 
     *CREATE DATABASE db_name
 5. On first EC2 instance-EC2a, 
+    
     *get DB_Backup_Script.sh & Restore_Script.sh
     *change mod of both the scripts to make them executable
      chmod 755 DB_Backup_Script.sh
@@ -53,5 +55,7 @@ Project is Complete.
 
 ## Inspiration
 [Congifure Email] {https://docs.aws.amazon.com/ses/latest/DeveloperGuide/monitor-sending-activity-using-notifications-email.html}
+
 [Backup to S3]    {https://aws.amazon.com/getting-started/hands-on/backup-to-s3-cli/}
+
 [Install AWS CLI] {https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html}
