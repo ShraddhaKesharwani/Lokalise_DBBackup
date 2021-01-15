@@ -35,16 +35,21 @@ This document give a very efficient way to taking backups of MySQL DB and store 
 5. On first EC2 instance-EC2a, 
     
     *get DB_Backup_Script.sh & Restore_Script.sh
+    
     *change mod of both the scripts to make them executable
      chmod 755 DB_Backup_Script.sh
      chmod 755 Restore_Script.sh
+    
     *execute the scripts
 
 ## Features
 
 *Automated backup for your MySQL DB to your Amazon S3 bucket.
+
 *Easy restoration of latest backup from S3 bucket.
+
 *Email alerts for backup status information.
+
 *Easily modifiable script with small changes in the variables.
   
 
